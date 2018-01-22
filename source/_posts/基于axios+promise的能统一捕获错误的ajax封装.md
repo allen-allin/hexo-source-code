@@ -4,7 +4,7 @@ date: 2017-6-10 21:22:46
 tags: 总结记录
 ---
 
-```
+```javascript
 // ajax.js
 
 
