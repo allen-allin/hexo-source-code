@@ -1,0 +1,24 @@
+---
+title: 前端性能之网络加载优化
+date: 2017-12-14 17:47:08
+tags: 前端性能
+description: 
+---
+
+1. 资源压缩合并，减少HTTP请求
+2. 非核心脚本代码异步加载
+
+    * `defer`: 异步并行加载脚本，当浏览器解析完HTML时才会执行，所以当脚本中有DOM操作时，应该使用`defer`。有多个脚本时，会按顺序依次执行。即依次从上往下执行。
+    * `async`: 异步并行加载脚本，不会等HTML解析完才执行，而是当该脚本加载完后立即执行，有多个脚本时，执行顺序与每个脚本的加载速度有关，与加载顺序无关。即谁先加载完谁就先执行。
+
+3. 浏览器缓存
+
+    * 强缓存: `Expires(绝对时间)`/`Cache-Control(相对时间，优先级高)`
+    * 协商缓存: `Last-Modified`/`If-Modified-Since`/`Etag`/`If-None-Match`
+4. 使用CDN
+5. 设置 DNS 预解析
+```
+    <meta http-equiv="x-dns-prefetch-control" content="on" >
+    <link rel="dns-prefetch" href="//cdn.domain.com" >
+```
+6. 服务器端开启Gzip压缩
