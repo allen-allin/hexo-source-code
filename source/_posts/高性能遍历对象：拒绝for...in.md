@@ -28,7 +28,7 @@ tags: 性能
         //输出 {key: "name", value: "xxx"}
         //     {key: "age", value: 24}
     ```
-    2.如果觉得使用`Object.entries(obj)`时语义不够明确，那么可以使用ES6的`for...of`方法，以达到类似`for...in`的写法
+    2. 如果觉得使用`Object.entries(obj)`时语义不够明确，那么可以使用ES6的`for...of`方法，以达到类似`for...in`的写法
 
     ```javascript
         const obj = {name: 'xxx',age: 24}
