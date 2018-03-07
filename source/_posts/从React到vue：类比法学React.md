@@ -1,5 +1,5 @@
 ---
-title: 从React到vue：类比法学React
+title: 从Vue到React：类比法学React
 date: 2018-3-7 13:07:08
 tags: React
 description: 通过比较vue和React的相似点和不同点来更好的学习React
