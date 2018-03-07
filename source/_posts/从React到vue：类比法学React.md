@@ -12,7 +12,7 @@ description: 通过比较vue和React的相似点和不同点来更好的学习Re
 组件化 | 单文件组件/component选项| js文件
 组件内部数据 | data | this.state 
 计算属性 | computed | - 
-监听器 | watch | 无，可使用自己写的[react-easy-watcher](https://www.npmjs.com/package/React-easy-watcher)实现 
+监听器 | watch | 无，可使用自己写的[react-easy-watcher](https://www.npmjs.com/package/react-easy-watcher)实现 
 列表渲染 | v-for |  JSX + 数组map
 条件渲染 | v-if | JSX + 三元表达式 
 父通信向子组件传值 | props | props 
